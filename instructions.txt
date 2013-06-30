@@ -1,0 +1,21 @@
+# Fork a repository, adding a remote location called <online name>:
+$ git remote add <online name> https://github.com/itrharrison/test.git
+
+# Pull in the git information from the <online name> location,
+# WITHOUT making any changes to the local files:
+$ git fetch <online name>
+
+# Merge any of the changes in <online name> to your local repo
+# (assuming it's called 'master'):
+$ git merge <online name>/master
+
+# Make some changes to some files...
+
+# Add the new changes to <files> to your next commit::
+$ git add <files>
+
+# Commit with the comment <your comment> (always comment!):
+$ git commit -m '<your comment>'
+
+# Send your commit to the remote location <online name>:
+$ git push <online name> master
